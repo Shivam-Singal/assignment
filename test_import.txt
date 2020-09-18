@@ -1,2 +1,3 @@
-foo bar; bar baz; baz quux
-apple; banana; grape
+foo bar; bar baz
+apple; banana
+<html><img src="180px-Flag_of_Portugal.svg.png"></html>; Portugal
