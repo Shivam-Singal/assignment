@@ -24,7 +24,7 @@ def get_flag_image(soup):
     index = 0
     image = outer_table.select('img')[index]
     #print(image)
-    while int(image["height"]) < 20 and int(image["width"]) < 20:
+    while int(image["height"]) < 25 or int(image["width"]) < 25:
         image = outer_table.select('img')[index]
         index +=1
     #print(image)
