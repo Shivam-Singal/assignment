@@ -4,14 +4,30 @@ import bs4
 
 def parse_page(url):
     response = requests.get(url)
-    print(response)
+    #print(response)
     text = response.text
     soup = bs4.BeautifulSoup(text, "lxml")
     return soup
 
 
 def get_flag_image(soup):
-    image = soup.select('img')[0]
+    #select the list of tables with class infobox
+    tables = soup.select('.infobox')
+    #print(tables)
+    #if no table with class infobox is available try class wikitable
+    if len(tables) == 0:
+        tables = soup.select('.wikitable')
+
+    outer_table = tables[0]
+
+    #select the image
+    index = 0
+    image = outer_table.select('img')[index]
+    #print(image)
+    while int(image["height"]) < 20 and int(image["width"]) < 20:
+        image = outer_table.select('img')[index]
+        index +=1
+    #print(image)
     return image
 
 
@@ -31,10 +47,10 @@ def download_and_save_image(image_url, img_name):
 #test the functions
 if __name__ == '__main__':
 
-    html_soup = parse_page("https://de.wikipedia.org/wiki/Republik_Zypern")
+    html_soup = parse_page("https://de.wikipedia.org/wiki/Ägypten")
 
     image = get_flag_image(html_soup)
 
     url = get_image_url(image)
 
-    download_and_save_image(url, "zypern")
+    download_and_save_image(url, "Ägypten")
