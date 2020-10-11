@@ -22,3 +22,6 @@ Each line in the file represents one country. This format can be used for an imp
 8. Choose import.txt as the file that you would like to import
 9. Select the checkbox that says 'Allow HTML in Fields'
 10. Click on 'Import' button
+
+## Remarks
+Right now, this only works with with German country names, as the web scraping has been programmed to work with the link https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde, which contains a list of all country names in German. Since the site with English country names has a different build-up, the scraping of this site does not work yet.
