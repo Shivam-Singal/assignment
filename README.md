@@ -13,4 +13,12 @@ Each line in the file represents one country. This format can be used for an imp
 
 ## Step-by-Step instructions on how to get the anki deck with country flags into ankidroid
 1. Fork this Repository
-2. 
+2. Run main.py in your command line
+3. In your current working directory this should have created a textfile with the name 'import.txt'
+4. Open your anki application
+5. Create a new Anki deck for your cards
+6. Go into the new deck by selecting it
+7. Click on the tab file and choose import (alternatively ctrl+shift+I)
+8. Choose import.txt as the file that you would like to import
+9. Select the checkbox that says 'Allow HTML in Fields'
+10. Click on 'Import' button
