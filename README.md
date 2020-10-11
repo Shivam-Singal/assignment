@@ -13,15 +13,15 @@ Each line in the file represents one country. This format can be used for an imp
 
 ## Step-by-Step instructions on how to get the deck with country flags into Anki
 1. Fork this Repository
-2. Run main.py in your command line
-3. In your current working directory this should have created a textfile with the name 'import.txt'
-4. Open your Anki application on your computer
-5. Create a new Anki deck for your cards
-6. Go into the new deck by selecting it
-7. Click on the tab file and choose import (alternatively ctrl+shift+I)
-8. Choose import.txt as the file that you would like to import
-9. Select the checkbox that says 'Allow HTML in Fields'
-10. Click on 'Import' button
+1. Run main.py in your command line
+1. In your current working directory this should have created a textfile with the name 'import.txt'
+1. Open your Anki application on your computer
+1. Create a new Anki deck for your cards
+1. Go into the new deck by selecting it
+1. Click on the tab file and choose import (alternatively ctrl+shift+I)
+1. Choose import.txt as the file that you would like to import
+1. Select the checkbox that says 'Allow HTML in Fields'
+1. Click on 'Import' button
 
 ## Remarks
 Right now, this only works with with German country names, as the web scraping has been programmed to work with the link https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde, which contains a list of all country names in German. Since the site with English country names has a different build-up, the scraping of this site does not work yet.
