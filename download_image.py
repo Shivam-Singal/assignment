@@ -39,7 +39,7 @@ def get_image_url(image):
 
 def download_and_save_image(image_url, img_name):
     response = requests.get(f"{image_url}")
-    file = open(f'C:\\Users\\~\\AppData\\~\\collection.media\\{img_name}.png', 'wb') #fill in your own user path here
+    file = open(f'C:\\~\\collection.media\\{img_name}.png', 'wb') #fill in your own user path here
     file.write(response.content)
     file.close()
 
