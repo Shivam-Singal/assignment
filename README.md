@@ -13,6 +13,7 @@ Each line in the file represents one country. This format can be used for an imp
 
 ## Step-by-Step instructions on how to get the deck with country flags into Anki
 1. Fork this Repository
+1. Open download_images.py and fill in the filepath on your computer where Anki saves its images (*see section Remarks)
 1. Run main.py in your command line
 1. In your current working directory this should have created a textfile with the name 'import.txt'
 1. Open your Anki application on your computer
