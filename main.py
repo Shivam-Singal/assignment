@@ -3,7 +3,7 @@ import bs4
 import download_image
 
 #send a request to wikipedia website with a list of all states
-response = requests.get('https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde')
+response = requests.get('https://de.wikipedia.org/wiki/List_of_countries_in_the_world)
 text = response.text
 soup = bs4.BeautifulSoup(text, "lxml")
 #print(soup)
